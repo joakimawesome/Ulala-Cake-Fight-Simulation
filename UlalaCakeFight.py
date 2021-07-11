@@ -67,7 +67,7 @@ def harvest(wheatOutput, wheatTotal, wheatStored=0):
     remaining = countdown()    
     wheatTotal += wheatStored
     while remaining > 0:
-        wheatTotal += wheatOutput
+        wheatTotal += int(wheatOutput)
         remaining -= 10
     return wheatTotal
 
